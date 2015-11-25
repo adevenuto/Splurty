@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
+  <title>Golf tip generator</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -12,23 +12,20 @@
       <%= link_to root_path, :class => 'logo' do %>
         <div class="circle">
           <br />
-          You know
+          Golf
           <br />
-          You need
+          Tip
           <br />
-          To code
+          Generator
         </div>
       <% end %>
     </div>
-    <div class="col-xs-4 slogan">
-      Splurting out unsolicited advice about entrepreneurship since 2014
-    </div>
-    <div class="col-xs-5 links">
-      <!-- Button trigger modal -->
-      <!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-        Launch demo modal
-      </button> -->
+    <!-- <div class="col-xs-3 hidden-xs hidden-sm slogan">
+
+    </div> -->
+    <div class="col-xs-8 right col-xs-offset-0 col-sm-3 links pull-right">
       <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+      &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
     </div>
   </header>
@@ -43,8 +40,9 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-            <%= f.input :saying %>
-            <%= f.input :author %>
+            <%= f.input :saying, :label => 'Quote', :placeholder => 'Add your quote' %>
+            <br />
+            <%= f.input :author, :label => 'Author', :placeholder => 'Add your name' %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -55,22 +53,31 @@
     </div>
   </div>
 
-  <hr />
   <br class="clear"/>
+
   <div class="container">
       <% if flash[:error].present? %>
       <div class="col-xs-10 col-xs-offset-1 alert alert-danger">
         <%= flash[:error].html_safe %>
       </div>
     <% end %>
-    <%= yield %>
+    <div class="center">
+      <%= yield %>
+    </div>
   </div>
+  <div class="next footer-blurb">
+    <%= link_to "Next Tip", root_path %>
+    <!-- <span class="arrow">&raquo;</span> -->
+  </div>
+
+
+  <!-- FOOTER -->
   <div class="footer">
     <div class="container">
-      <div class="col-xs-6">
-        <%= link_to "More quotes", root_path, :class => 'next-quote'%>
-      </div>
-      <div class="col-xs-6 footer-blurb">
+      <!-- <div class="col-xs-12 col-sm-6">
+
+      </div> -->
+      <div class="col-xs-12 col-sm-6 footer-blurb pull-right">
         Built in Chicago, by <a href="https://github.com/adevenuto">Anthony DeVenuto</a>
         <!-- <br />
         Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a> -->

@@ -7,40 +7,51 @@
   font-size: 20px;
 }
 .slogan {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-  font-style: italic;
+  /*font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;*/
   padding-top: 26px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
 }
 .footer-blurb {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-  font-style: italic;
+  font-family: Helvetica Neue, Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  /*font-style: italic;*/
   text-align:right;
   font-size: 15px;
+  font-weight: 100;
+}
+.modal {
+  font-family: Helvetica Neue, Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 .about {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-family: Helvetica Neue, Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 .logo:hover {
   text-decoration:none;
 }
+body {
+  background-image: url("solid.png");
+}
 .circle {
-    font-weight:bold;
-    font-style: italic;
-    position: relative;
-    border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(-11deg);
-    -ms-transform:rotate(-11deg); /* IE 9 */
-    -webkit-transform:rotate(-11deg); /* Opera, Chrome, and Safari */
+  background:transparent url(texture.jpg) no-repeat center center;
+  background-position:center;
+  font-weight:bold;
+  font-style: italic;
+  overflow: hidden;
+  position: relative;
+  border-radius: 100%;
+  width: 100px;
+  top: 10px;
+  height: 100px;
+  margin: 10px 10px;
+  text-align: center;
+  color: #2E9831;
+  font-size: 14px;
+
+  cursor: pointer;
+  transform:rotate(-11deg);
+  -ms-transform:rotate(-11deg); /* IE 9 */
+  -webkit-transform:rotate(-11deg); /* Opera, Chrome, and Safari */
 }
 .profile_pic {
   height: 150px;
@@ -49,12 +60,61 @@
 }
 .links {
   padding-top:26px;
+  width:auto;
 }
+
 .links a {
   color:black;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: Helvetica Neue;
+  font-weight: 100;
   /*border-bottom: 1px solid #dfdfdf;*/
+}
+h1 {
+  font-family: 'nobileregular', sans-serif;
+  font-size:48px;
+}
+.arrow {
+  font-size: 40px;
+  line-height: 40px;
+}
+header {
+  height: 110px;
+  width:100%;
+  background:transparent url(grass.jpg);
+  border-bottom: 5px solid #F3B916;
+}
+h2 span {
+  color: #fff;
+  font-family: 'nobileregular', sans-serif;
 }
 hr {
   clear:both;
 }
+.next {
+  text-align: center;
+}
+.next a {
+  text-decoration: none;
+  position: relative;
+  bottom: 40px;
+  font-size: 20px;
+}
+.next a:hover {
+  color:#fff;
+}
+.center {
+  text-align: center;
+}
+.container {
+  margin-top: 21px;
+}
+#author {
+  font-size: 1.25em;
+  color: #ABA8A8;
+}
+/*@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}*/
