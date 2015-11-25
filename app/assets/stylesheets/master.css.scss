@@ -35,8 +35,10 @@ body {
 .circle {
   background:transparent url(texture.jpg) no-repeat center center;
   background-position:center;
-  font-weight:bold;
-  font-style: italic;
+  /*font-weight:bold;
+  font-style: italic;*/
+  border: 2px solid #F3B916;
+  font-family: Helvetica Neue;
   overflow: hidden;
   position: relative;
   border-radius: 100%;
@@ -45,13 +47,13 @@ body {
   height: 100px;
   margin: 10px 10px;
   text-align: center;
-  color: #2E9831;
+  color: #609703;
   font-size: 14px;
 
   cursor: pointer;
-  transform:rotate(-11deg);
-  -ms-transform:rotate(-11deg); /* IE 9 */
-  -webkit-transform:rotate(-11deg); /* Opera, Chrome, and Safari */
+  /*transform:rotate(-11deg);*/
+  /*-ms-transform:rotate(-11deg); /* IE 9 */
+  /*-webkit-transform:rotate(-11deg); /* Opera, Chrome, and Safari */
 }
 .profile_pic {
   height: 150px;
@@ -71,12 +73,14 @@ body {
   /*border-bottom: 1px solid #dfdfdf;*/
 }
 h1 {
-  font-family: 'nobileregular', sans-serif;
+  font-family: Helvetica Neue;
+  font-weight: 100;
   font-size:48px;
 }
-.arrow {
-  font-size: 40px;
-  line-height: 40px;
+h4 {
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  font-size:20px;
 }
 header {
   height: 110px;
@@ -111,7 +115,7 @@ hr {
 }
 #author {
   font-size: 1.25em;
-  color: #ABA8A8;
+  color: #FFFFFF;
 }
 /*@media (max-width: 750px) {
   .footer-blurb {
