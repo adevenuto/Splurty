@@ -18,19 +18,22 @@
   /*font-style: italic;*/
   text-align:right;
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 200;
 }
 .modal {
   font-family: Helvetica Neue, Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 .about {
   font-family: Helvetica Neue, Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-size: 17px;
+  font-weight: 400;
 }
 .logo:hover {
   text-decoration:none;
 }
 body {
   background-image: url("solid.png");
+  background-color: #fff;
 }
 .circle {
   background:transparent url(texture.jpg) no-repeat center center;
@@ -116,6 +119,9 @@ hr {
 #author {
   font-size: 1.25em;
   color: #FFFFFF;
+}
+.footer {
+  background-color: #fff;
 }
 /*@media (max-width: 750px) {
   .footer-blurb {
